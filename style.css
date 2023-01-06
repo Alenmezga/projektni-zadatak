@@ -1,0 +1,297 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+a,
+p,
+span {
+    font-size: 18px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+h6 {
+    font-size: 18px;
+}
+h5 {
+    font-size: 20px;
+}
+h4 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 28px;
+}
+h2 {
+    font-size: 32px;
+}
+h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+img {
+    width: 100%;
+}
+.ta-center {
+    text-align: center;
+}
+main {
+    min-height: 55vh;
+}
+main,
+footer {
+    padding: 0 16px;
+}
+figure {
+    margin: 0;
+    padding: 0 8px;
+}
+figcaption {
+    font-size: 16px;
+}
+footer {
+    background-color: #01796f;
+    color: white;
+    text-align: center;
+}
+footer p {
+    padding: 16px 8px;
+    margin: 16px 0 0 0;
+    font-size: 16px;
+}
+footer a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+footer a:hover {
+    color: white;
+}
+/* Banner */
+.hero-banner {
+    background-image: url(./slike/hero-banner.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+/* Navigacija */
+nav {
+    background-color: #01796f;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+nav ul li {
+    float: left;
+}
+nav ul li a {
+    display: block;
+    text-transform: uppercase;
+    padding: 20px;
+    text-decoration: none;
+    font-weight: 800;
+    color: white;
+    transition: 0.2s all;
+}
+nav ul li a.active {
+    background-color: #01796f;
+    color: black;
+}
+nav ul li a:hover {
+    background-color: white;
+    color: #01796f;
+}
+nav ul li a.active:hover {
+    color: black;
+}
+/* INDEX */
+.intro {
+    padding: 0 15%;
+    font-size: 20px;
+    font-weight: 400;
+}
+.intro i {
+    font-size: 16px;
+}
+.intro-gallery {
+    display: flex;
+    width: 100%;
+}
+.intro-gallery figure {
+    width: 50%;
+    max-width: 550px;
+}
+/* ZNAMENITOSTI */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+.grid a {
+    width: 50%;
+    padding: 0 8px;
+    color: black;
+    text-decoration: none;
+    transition: 0.2s all;
+}
+.grid a:hover {
+    color: #01796f;
+}
+.grid h2 {
+    margin-top: 0;
+}
+/* ZNAMENITOSTI CLANCI */
+.back {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 2px solid black;
+    margin-top: 8px;
+    margin-bottom: -16px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.back:hover {
+    color: white;
+    background-color: #01796f;
+    border-color: #01796f;
+}
+.post figure {
+    width: 600px;
+    float: left;
+}
+.post p {
+    text-align: justify;
+}
+.clear {
+    clear: both;
+}
+/* KONTAKT */
+.contact-grid {
+    display: flex;
+}
+.contact-grid > div {
+    width: 50%;
+    padding: 0 8px;
+}
+.contact-grid h2,
+.contact-grid h3 {
+    margin-top: 0;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+form label {
+    padding: 8px 0;
+}
+form input,
+form textarea,
+form select {
+    padding: 8px;
+    border: 2px solid #01796f;
+    background-color: white;
+}
+form input[type="submit"] {
+    margin-top: 8px;
+    background-color: #01796f;
+    color: white;
+    transition: 0.2s all;
+}
+form input[type="submit"]:hover {
+    background-color: white;
+    color: black;
+}
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 16px 0;
+}
+.contact-list li {
+    padding: 8px 0;
+}
+.contact-list a {
+    color: #01796f;
+    text-decoration: none;
+}
+.contact-list a:hover {
+    color: black;
+}
+.contact-details {
+    padding: 0 8px;
+}
+/* O NAMA */
+#park-video {
+    max-width: 550px;
+    float: left;
+    margin-right: 16px;
+    margin-bottom: 8px;
+}
+/* GALERIJA */
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+.gallery-grid > figure {
+    margin-top: 16px;
+    width: 25%;
+}
+.gallery-grid a {
+    display: block;
+}
+.gallery-grid figcaption {
+    background-color: #01796f;
+    padding: 8px;
+    color: white;
+}
+/* MOBILE SCREEN */
+@media only screen and (max-width: 600px) {
+    .intro {
+        padding: 0 5%;
+    }
+    .intro-gallery {
+        flex-wrap: wrap;
+    }
+    .intro-gallery figure {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    .grid a {
+        width: 100%;
+    }
+    .post figure {
+        width: 100%;
+    }
+    .contact-grid {
+        flex-wrap: wrap;
+    }
+    .contact-grid > div {
+        width: 100%;
+    }
+    #park-video {
+        width: 100%;
+        float: none;
+    }
+    .gallery-grid > figure {
+        width: 50%;
+    }
+}
+/* SMALL MOBILE SCREEN */
+@media only screen and (max-width: 400px) {
+    .gallery-grid > figure {
+        width: 100%;
+    }
+}

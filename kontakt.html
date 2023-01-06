@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="hr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Kontakt podaci" />
+        <meta name="keywords" content="kontakt, karta, forma, podaci" />
+        <meta name="author" content="Alen Mezga" />
+        <title>Kontakt - Park Maksimir</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <div class="hero-banner"></div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Početna</a>
+                    </li>
+                    <li>
+                        <a href="znamenitosti.html">Znamenitosti</a>
+                    </li>
+                    <li>
+                        <a class="active" href="kontakt.html">Kontakt</a>
+                    </li>
+                    <li>
+                        <a href="o-nama.html">O nama</a>
+                    </li>
+                    <li>
+                        <a href="galerija.html">Galerija</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Kontakt</h1>
+            <div class="contact-details">
+                <h2>Kontakt podaci</h2>
+                <p>
+                    JAVNA USTANOVA - MAKSIMIR<br />
+                    Maksimirski perivoj 1<br />
+                    HR-10000 ZAGREB<br />
+                </p>
+            </div>
+            <div class="contact-grid">
+                <div>
+                    <h3>Uprava</h3>
+                    <ul class="contact-list">
+                        <li>Tel.: 01 2320 460</li>
+                        <li>
+                            e-mail:
+                            <a href="mailto:park-maksimir@park-maksimir.hr"
+                                >park-maksimir@park-maksimir.hr</a
+                            >
+                        </li>
+                        <li>
+                            Radno vrijeme: Od 8.00 do 16.00 sati, svakog radnog
+                            dana od ponedjeljka do petka
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Zaštitarska služba u parku Maksimir</h3>
+                    <ul class="contact-list">
+                        <li>Tel.: +385 99 5293 725, +385 99 5293 726</li>
+                        <li>Radno vrijeme: Od 0:00 do 24:00 sati</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contact-grid">
+                <div>
+                    <h2>Lokacija</h2>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5560.766198961281!2d16.015405029641283!3d45.823611924173925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d7eab57cb9cf%3A0xd73c20080fa84ffe!2sPark%20Maksimir!5e0!3m2!1shr!2shr!4v1671539037604!5m2!1shr!2shr"
+                        height="600"
+                        style="border: 0; width: 100%"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                </div>
+                <div>
+                    <h2>Kontakt obrazac</h2>
+                    <form action="obrazac" name="kontakt_obrazac" method="POST">
+                        <label for="ime">Ime *</label>
+                        <input
+                            type="text"
+                            id="ime"
+                            name="ime"
+                            placeholder="Ime..."
+                            required
+                        />
+                        <label for="prezime">Prezime *</label>
+                        <input
+                            type="text"
+                            id="prezime"
+                            name="prezime"
+                            placeholder="Prezime..."
+                            required
+                        />
+                        <label for="email">E-mail *</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="E-mail..."
+                            required
+                        />
+                        <label for="drzava">Država</label>
+                        <select id="drzava" name="drzava">
+                            <option value="">Molimo odaberite državu</option>
+                            <option value="HR" selected>Hrvatska</option>
+                            <option value="DE">Njemačka</option>
+                            <option value="EN">Ujedinjeno Kraljevstvo</option>
+                            <option value="FR">Francuska</option>
+                            <option value="US">
+                                Sjedinjene Američke Države
+                            </option>
+                        </select>
+                        <label for="opis">Opis</label>
+                        <textarea
+                            id="opis"
+                            name="opis"
+                            placeholder="Opis..."
+                        ></textarea>
+                        <input id="posalji" type="submit" value="Pošalji" />
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>Copyright &copy; 2022. Alen Mezga. <a href="https://github.com/Alenmezga/projektni-zadatak">Github</a></p>
+        </footer>
+    </body>
+</html>
